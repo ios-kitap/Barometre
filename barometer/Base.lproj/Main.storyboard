@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="barometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM2-wp-gFs">
+                                <rect key="frame" x="187.5" y="290" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-ZL-bSN">
+                                <rect key="frame" x="187.5" y="356" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alt : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7E-ss-cuV">
+                                <rect key="frame" x="0.0" y="290" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure (kP) : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZu-0A-aZZ">
+                                <rect key="frame" x="0.0" y="356" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pZ-UM-zqV">
+                                <rect key="frame" x="137.5" y="537" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.43949568820000001" green="0.57186220720000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dUQ-Vs-KSx"/>
+                                    <constraint firstAttribute="width" constant="100" id="hUt-3R-VTa"/>
+                                </constraints>
+                                <state key="normal" title="Başla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPRess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtJ-3V-RMK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9vV-ZL-bSN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="60g-W0-U8V"/>
+                            <constraint firstItem="NZu-0A-aZZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Gf-GX-sdM"/>
+                            <constraint firstItem="D7E-ss-cuV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="6vG-KA-yMK"/>
+                            <constraint firstItem="NZu-0A-aZZ" firstAttribute="top" secondItem="D7E-ss-cuV" secondAttribute="bottom" constant="45" id="D0b-oB-0cc"/>
+                            <constraint firstItem="D7E-ss-cuV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FiH-q6-5HL"/>
+                            <constraint firstItem="RM2-wp-gFs" firstAttribute="leading" secondItem="D7E-ss-cuV" secondAttribute="trailing" id="Hcc-jP-z7P"/>
+                            <constraint firstItem="D7E-ss-cuV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="NGy-LM-vP9"/>
+                            <constraint firstItem="9vV-ZL-bSN" firstAttribute="centerY" secondItem="NZu-0A-aZZ" secondAttribute="centerY" id="YkM-fo-qyc"/>
+                            <constraint firstItem="9vV-ZL-bSN" firstAttribute="leading" secondItem="NZu-0A-aZZ" secondAttribute="trailing" id="b93-9J-dcn"/>
+                            <constraint firstItem="2pZ-UM-zqV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gGy-nX-e6c"/>
+                            <constraint firstItem="RM2-wp-gFs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kXs-mQ-JQG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2pZ-UM-zqV" secondAttribute="bottom" constant="100" id="pbz-FV-oHn"/>
+                            <constraint firstItem="RM2-wp-gFs" firstAttribute="centerY" secondItem="D7E-ss-cuV" secondAttribute="centerY" id="roH-v3-ZDH"/>
+                            <constraint firstItem="NZu-0A-aZZ" firstAttribute="width" secondItem="D7E-ss-cuV" secondAttribute="width" id="z3Q-9N-oaH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="altitu" destination="RM2-wp-gFs" id="b0e-b7-ha2"/>
+                        <outlet property="press" destination="9vV-ZL-bSN" id="a4R-IL-pM5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
